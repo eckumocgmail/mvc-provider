@@ -1,0 +1,9 @@
+<div oninput="event.preventDefault();">
+  <input type="file" (input)="destroy($event)" (change)="changed($event)" [hidden]="true" #file multiple [attr.accept]="accepts"/>
+  <div class="app-front-pane" style="width: 100%;">
+      <div align="right">
+          <button (click)="select()">select</button>
+          <button (click)="upload()" [disabled]="!files || files.length===0">upload</button>
+      </div>
+  </div>
+</div>

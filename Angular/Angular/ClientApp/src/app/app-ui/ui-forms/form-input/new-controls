@@ -1,0 +1,15 @@
+
+
+
+data Type
+
+<div class="form-group">
+    <label asp-for="Type" class="control-label"></label>
+    <select class="form-control" asp-for="Type">
+        @foreach (var pair in dataTypes.GetDataTypes())
+        {
+            <option value="@pair.Value">@pair.Key</option>
+        }
+    </select>
+    <span asp-validation-for="Type" class="text-danger"></span>
+</div>

@@ -1,0 +1,33 @@
+<context-menu></context-menu>
+<div style="width: 100%; height: 1000px; display: flex; flex-direction: row; flex-wrap: nowrap; position: fixed; overflow-y: auto;">
+  <layout-column style="width: 100%; height: 100%;">
+
+    <layout-pane style="width: 100%; height: 100%;" class="top" [hidden]="hideToolbar">
+      <div style="display: flex; flex-direction: row; flex-wrap: nowrap; padding: 25px;">
+        <button mat-raised-button (click)="drawer.opened=true"><mat-icon> menu </mat-icon></button>
+        <button mat-raised-button (click)="onClickPerson()"><mat-icon> person </mat-icon></button>
+        <button mat-raised-button (click)="onClickApps()" style="justify-self: flex-end; margin-left: auto;"><mat-icon> apps </mat-icon></button>
+      </div>
+      <control-search [options]="keywords" (search)="onSearch($event)" (input)="onInputSearch($event)" style="width: 100%;">
+      </control-search>
+    </layout-pane>
+
+    <mat-drawer-container style="width: 100%; height: 100%;">
+      <mat-drawer #drawer mode="side" (mouseleave)="drawer.opened=false">
+        <feature-nav></feature-nav>
+
+      </mat-drawer>
+      <div style="width: 100%; height: 100%;">
+       
+        <router-outlet style="width: 100%; height: 100%;"></router-outlet>
+      </div>
+    </mat-drawer-container>
+
+    <div class="bottom" style="width: 100%;" >
+      <feature-help></feature-help>
+      <control-progress #progress></control-progress>
+    </div>
+  </layout-column>
+</div>
+
+

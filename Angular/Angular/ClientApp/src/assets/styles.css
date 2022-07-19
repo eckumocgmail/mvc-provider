@@ -1,0 +1,13 @@
+@import url("app-style/bootstrap.min.css");
+@import url("app-style/mat-themes/indigo-pink.css");
+@import url("app-style/app-themes/village-face.css");
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+html, body{
+  height: 100%;
+  margin: auto;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

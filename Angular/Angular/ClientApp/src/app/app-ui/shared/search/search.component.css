@@ -1,0 +1,17 @@
+.search-box{
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  width: 250px;
+  transition: width 0.3s;
+}
+.search-box.focused{
+  width: 100%;
+  transition: width 0.3s;
+}
+.search-box-container{
+  padding-right: 10px;
+  padding-left: 10px;
+}

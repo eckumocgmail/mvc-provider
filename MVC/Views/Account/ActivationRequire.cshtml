@@ -1,0 +1,41 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, NetCoreConstructorAngular
+@{
+    ViewData["Title"] = "Активация учетной записи";
+}
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model ActivationRequireViewModel
+    <div style="padding: 20px;">
+        <form class="front-pane init" asp-antiforgery="true" asp-action="ActivationRequire" asp-controller="Account" asp-area="">
+            <h2> Активация учетной записи </h2>
+            <div class="validation"> Учетная запись не активирована </div><hr />
+            <input type="hidden" id="Email" name="Email" value="@Model.Email" />
+            @if (Model.Message != null)
+            {
+                <div class="alert-info" style="padding: 10px;">@Model.Message</div>
+            }
+
+            <!-- Email -->
+            <label asp-for="ActivationKey" id="ActivationKeyLabel"></label>
+            <div class="input-group">
+                <input asp-for="ActivationKey"
+                       class="form-control"
+                       name="ActivationKey"
+                       id="ActivationKey">
+
+            </div>
+            <div>
+                <span class="text-danger" asp-validation-for="ActivationKey"></span>
+            </div><br />
+            <div><a href="https://@Model.Email.Substring(Model.Email.IndexOf("@")+1)">Посмотреть почтовый ящик</a></div>
+            <div>
+                <a align="center" asp-controller="Account" asp-action="SendActivationKey">
+                    выслать код регистрации повторно
+                </a>
+            </div>
+            <button class="btn btn-primary" type="submit"> выполнить активацию </button>
+        </form>
+    </div>

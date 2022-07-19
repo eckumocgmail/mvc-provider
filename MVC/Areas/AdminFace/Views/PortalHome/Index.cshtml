@@ -1,0 +1,37 @@
+﻿@inject AdminDbContext context 
+@inject System.Net.Http.IHttpClientFactory factory
+@{
+    var client = factory.CreateClient("proxy");
+    var segments = context.ProxyUrlSegments.ToList();
+    ViewData["Title"] = "Домашняя";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Добро пожаловь</h1>
+    <p> Узнать подробнее о <a asp-action="Privacy">микросервисной архитектуре</a>.</p>  
+    <textarea>
+        @client.GetAsync("http://mail.ru")
+    </textarea>
+</div>
+<div style="width: 100%; display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; overflow-y: auto; height: auto;">
+
+    @if (segments.Count() == 0)
+    {
+        <div class="alert alert-warning w-100"> Не зарегистрированно ни одной службы</div>
+        <a class="alert alert-info w-100" asp-controller="Proxy" asp-action="Create"> Перейти к регистрации</a>
+    }
+    else
+    {
+        @foreach (var segment in segments)
+        {
+            <div style="width: 220px; margin: 10px; height: 220px;" class="btn btn-primary">
+                @segment.URL
+            </div>
+        }
+    }
+
+
+
+
+
+</div>

@@ -1,0 +1,13 @@
+<div class="card" style="width: 100%; border-width: 2px black;">
+  <div class="card-header text-white bg-primary">
+
+
+      <ng-content select=".frame-header"></ng-content>
+
+  </div>
+  <div class="card-body">
+    <ng-content select="*:not(.frame-header):not(.frame-footer)"></ng-content>
+  </div>
+  <div style="display: flex; flex-direction: row; justify-content: flex-end;">
+  </div>
+</div>

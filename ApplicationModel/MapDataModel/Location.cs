@@ -1,0 +1,16 @@
+﻿using CoreModel;
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ApplicationModel.MapDataModel
+{
+    public class Location: BaseEntity
+    {
+        public double Logitude { get; set; }
+        public double Latitude { get; set; }
+    }
+}

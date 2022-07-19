@@ -1,0 +1,27 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, NetCoreConstructorAngular
+@{
+    ViewData["Title"] = "Разделение ответственности";
+    if(ViewContext.HttpContext.Request.Headers.ContainsKey("ajax") == false){ Layout = "~/Views/Shared/_Layout.cshtml"; }
+}
+@inject ApplicationDbContext db
+
+<panel>
+    <div class="text-center">
+        <h1 class="display-4">Функции</h1>
+    </div>
+
+    @foreach (var role in db.BusinessResources)
+    {
+        <div style="padding: 20px; width: 100%; text-align: justify; text-indent: 20px;">
+            <div class="card" style="width: 100%;">
+                <h4 class="card-header">
+                    @role.Name
+                </h4>
+                <div class="card-header">
+                    @role.Description
+                </div>
+            </div>
+        </div>
+    }
+</panel>

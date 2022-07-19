@@ -1,0 +1,17 @@
+<div class="card-group">
+  <div class="card" *ngFor="let item of items">
+    <img *ngIf="item.src"
+         class="card-img-top"
+         [attr.src]="item.src"
+
+         alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+      <p class="card-text">{{item.text}}</p>
+      <p class="card-text"><small class="text-muted">{{item.annotation}}</small></p>
+    </div>
+  </div>
+
+</div>
+
+

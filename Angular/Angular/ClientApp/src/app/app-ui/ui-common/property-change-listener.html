@@ -1,0 +1,25 @@
+<div style="margin: 5px;">
+  <div *ngIf="isArray()">
+    <div *ngFor="let index of utils.indexes(propertyRef)">
+      <app-changes [property-ref]="utils.seal(propertyRef[index])"
+                   [property-name]="index"
+                   [parent-listener]="self"
+                   (onChanged)="onPropertyChanged( temp, $event, index+'', 'updated' )">
+       </app-changes>
+    </div>
+  </div>
+  <div *ngIf="isObject()">
+    <div *ngFor="let pname of utils.names(propertyRef)">
+
+        <app-changes [property-ref]="utils.seal(propertyRef[pname])"
+                     *ngIf="propertyRef[pname]"
+                     [parent-listener]="self"
+                     [property-name]="pname"
+                     (onChanged)="onPropertyChanged( temp, $event, pname, 'updated' )">
+        </app-changes>
+    </div>
+  </div>
+  <div *ngIf="isFunction()">
+
+  </div>
+</div>

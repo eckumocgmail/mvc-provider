@@ -1,0 +1,59 @@
+
+
+<div #frameRef>
+  <h2>form-builder works!</h2>
+
+
+  <div class="top" style="padding: 20px;">
+    <button mat-raised-button (click)="create()">
+      <mat-icon>add</mat-icon>
+    </button>
+    <button mat-raised-button (click)="inputFormModel=createPrototype()">
+      <mat-icon>create</mat-icon>
+    </button>
+  </div>
+
+
+  <app-line-pane #pane>
+    <!-- (selected)="trace(pane.right.opened=$event.selected);"> -->
+    <app-list class="left"
+              [title]="'Properties'"
+              [listitems]="getProperties()"
+              [template]="listitemTemplateRef"
+              [selectable]="true"
+              [checkable]="false"
+              [multiselect]="false"
+              (selected)="propertyModel=$event;">
+
+      <ng-template #listitemTemplateRef let-ctrl="ctrl" let-ctx="ctx">
+        {{ ctrl.name }}
+      </ng-template>
+    </app-list>
+
+    <div>
+      <app-input-form *ngIf="inputFormModel" [properties]="inputFormModel">
+      </app-input-form>
+    </div>
+    <!-- <app-table #tableRef
+              class="bottom"
+              [columns]="cols"
+              [dataset]="getProperties()"
+              [selectable]="true"
+              [multiselect]="false"
+              (selected)="trace(pane.right.opened=$event.selected);">
+    </app-table> -->
+
+    <div class="right">
+        <!-- *ngIf="pane.right.opened" -->
+      <app-input-form #form
+                      [title]="propertyModel.name"
+                      [properties]="propertyModel">
+        <app-input-form *ngIf="propertyModel && propertyModel.type" [properties]="validators[propertyModel.type]"></app-input-form>
+        <button mat-raised-button (click)="create(propertyModel)"> create </button>
+      </app-input-form>
+    </div>
+  </app-line-pane>
+
+
+</div>
+

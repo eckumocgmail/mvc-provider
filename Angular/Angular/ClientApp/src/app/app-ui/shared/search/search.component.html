@@ -1,0 +1,8 @@
+<div (submit)="onSearch( query.value )" (keypress)="onKeypress( $event )" style="display: flex; flex-direction: row; flex-wrap: nowrap; align-items: baseline; justify-content: baseline; ">
+  <input class="form-control" list="inputSearchOptions" type="text" placeholder="Search" aria-label="Search" (input)="onInput($event)" autofocus="true" #query
+         style="top: 0px; left: 0px; width: 100%;">
+  <button class="btn btn-primary my-2 my-sm-0" type="submit" (click)="onSearch( query.value )">Поиск</button>
+  <datalist id="inputSearchOptions">
+    <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+  </datalist>
+</div>

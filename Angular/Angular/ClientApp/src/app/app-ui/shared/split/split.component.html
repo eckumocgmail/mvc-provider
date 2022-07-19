@@ -1,0 +1,18 @@
+<div>
+  <div class="row" *ngIf="!reversed">
+    <div class="col-sm-3" style="word-break: break-all;">
+      <ng-content select=".left"></ng-content>
+    </div>
+    <div class="col-sm-9" style="word-break: break-all;">
+      <ng-content select="*:not(.left)"></ng-content>
+    </div>
+  </div>
+  <!-- <div class="row" *ngIf="reversed">
+    <div class="col-sm-9" style="word-break: break-all;">
+      <ng-content select="*:first"></ng-content>
+    </div>
+    <div class="col-sm-3" style="word-break: break-all;">
+      <ng-content select="*:not(*:first)"></ng-content>
+    </div>
+  </div> -->
+</div>

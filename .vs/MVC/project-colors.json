@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "7a16a2db-656d-44b4-9ea6-9295e1bc9e22": {
+      "ProjectGuid": "7a16a2db-656d-44b4-9ea6-9295e1bc9e22",
+      "DisplayName": "MVC",
+      "ColorIndex": 0
+    },
+    "e32fbb0b-306e-4c02-bb62-2481baccf64e": {
+      "ProjectGuid": "e32fbb0b-306e-4c02-bb62-2481baccf64e",
+      "DisplayName": "ApplicationAuthorization",
+      "ColorIndex": 1
+    },
+    "b9a0e02c-aef6-496a-907f-9ad92be534a5": {
+      "ProjectGuid": "b9a0e02c-aef6-496a-907f-9ad92be534a5",
+      "DisplayName": "ApplicationModel",
+      "ColorIndex": 2
+    },
+    "830a3d9e-ace3-4033-ba19-d580537ba880": {
+      "ProjectGuid": "830a3d9e-ace3-4033-ba19-d580537ba880",
+      "DisplayName": "CoreModel",
+      "ColorIndex": 3
+    },
+    "eb94e0ba-4a8c-46e4-84c3-e29055be5654": {
+      "ProjectGuid": "eb94e0ba-4a8c-46e4-84c3-e29055be5654",
+      "DisplayName": "ApplicationServices",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Прочие файлы",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}

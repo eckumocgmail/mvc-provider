@@ -1,0 +1,40 @@
+body,html{
+  height: 100%;
+  margin: auto;
+}
+
+.selected, .selected *{
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.focused{
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.mat-dialog-panel .mat-dialog-container,.mat-dialog-container,.mat-dialog-container * {
+  padding: 0;
+}
+
+.link-active > *{
+  background-color: #3f51b5;
+  color: white;
+}
+
+
+a:visited, a:active, a:valid, a {
+  color: #e01a76;
+}
+
+code {
+  color: #e01a76;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}

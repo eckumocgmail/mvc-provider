@@ -1,0 +1,28 @@
+<div class="card text-center">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+
+      <li class="nav-item" *ngFor="let tab of tabs">
+        <a class="nav-link active" (click)="set(tab)">{{ tab.label }}</a>
+      </li>
+
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">
+
+      <!-- <div *ngIf="loginForm.enabled">
+        <div class="spinner-border text-primary" role="status">
+          <span class="sr-only">{{ loginForm.status }}</span>
+        </div>
+      </div> -->
+
+      Login
+    </h5>
+    <div class="card-text">
+      <ng-container *ngComponentOutlet="component"></ng-container>
+        <!-- <app-login-form #loginForm></app-login-form> -->
+    </div>
+    <!-- <a href="#" class="btn btn-primary"(click)="loginForm.login('','')">login</a> -->
+  </div>
+</div>

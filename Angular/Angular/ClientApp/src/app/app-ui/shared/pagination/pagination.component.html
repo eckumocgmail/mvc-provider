@@ -1,0 +1,13 @@
+<nav>
+  <ul class="pagination" >
+
+    <li class="page-item"><a class="page-link">Previous</a></li>
+    <div style="max-width: 360px; overflow-x: hidden; display: flex; flex-direction: row; flex-wrap:  nowrap;">
+      <li class="page-item" *ngFor="let p of pages" (click)="setPage.emit(page=p)">
+        <a class="page-link">{{ p }}</a>
+      </li>
+    </div>
+    <li class="page-item"><a class="page-link">Next</a></li>
+
+  </ul>
+</nav>

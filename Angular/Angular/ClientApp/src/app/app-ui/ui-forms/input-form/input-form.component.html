@@ -1,0 +1,264 @@
+
+
+<form [formGroup]="inputForm" novalidate
+      action="#"
+
+      style="width: 100%; height: 100%; "
+      *ngIf="names"
+      (submit)="terminate($event)"
+      (keypress)="terminate($event)"
+      (input)="set( $event )">
+
+  <!-- <app-frame-pane [title]="title" (statusChanged)="onStatusChanged($event)"> -->
+    <h2 *ngIf="title"> {{ title }} </h2>
+    <div class="top">
+      <ng-content class="windows-bar" select=".top" ></ng-content>
+
+    </div>
+
+    <div style="width: 100%; height: 100%;">
+
+      <div *ngFor="let name of names">
+
+
+
+        <div *ngIf="descriptors[name]">
+
+
+          <div *ngIf="!descriptors[name].model">
+            not descriptors[name].model for {{name}}
+            <div>
+              {{descriptors[name]|json}}
+            </div>
+          </div>
+
+
+          <div *ngIf="!descriptors[name].hidden">
+
+
+            <!-- primitive type of model -->
+            <div *ngIf="descriptors[name].model && descriptors[name].model.type=='primitive'">
+
+              <mat-form-field tabindex="1">
+                <mat-label style="color: black;">  {{ descriptors[name].label||name }}  </mat-label>
+                <input matInput
+                      *ngIf="descriptors[name].model.input!=='date'"
+                      name="{{name}}"
+                      [type]="descriptors[name].model.input"
+                      [value]="service.getInputValue( properties[name], descriptors[name] )"
+                      style="width: 100%;">
+                <input matInput *ngIf="descriptors[name].model.input==='date'"
+                      name="{{name}}"
+                      type="date"
+                      [value]="service.getInputValue( properties[name], descriptors[name] )"
+                      style="width: 100%;">
+
+              </mat-form-field>
+              <mat-error *ngIf="errors[name] && errors[name].length>0">
+                <div *ngFor="let error of errors[name]"> {{ error.message || error }} </div>
+              </mat-error>
+              <mat-hint *ngIf="messages[name] && messages[name].length>0" color="accent">
+                <div *ngFor="let hint of messages[name]" color="accent">  {{ hint }} </div>
+              </mat-hint>
+            </div>
+
+
+            <!-- control type of model -->
+            <div>
+              <mat-form-field *ngIf="descriptors[name].model && descriptors[name].model.type=='control' && descriptors[name].model.input=='selectbox'">
+                <mat-label style="color: black;"> {{ descriptors[name].label||name }} </mat-label>
+                <mat-select [placeholder]="name"
+                            [value]="properties[name]"
+                            [formControlName]="name"
+                            (selectionChange)="set({target:{ name: name, value: $event.value }})">
+                    <mat-option *ngFor="let option of descriptors[name].model.options"
+                                [value]="option">
+                      {{ option }}
+                    </mat-option>
+                </mat-select>
+                <mat-error *ngIf="errors[name] && errors[name].length>0">
+                  <div *ngFor="let error of errors[name]" color="accent">   {{ error.message }} </div>
+                </mat-error>
+                <mat-hint *ngIf="messages[name] && messages[name].length>0" color="accent">
+                  <div *ngFor="let hint of messages[name]" color="accent">  {{ hint }} </div>
+                </mat-hint>
+              </mat-form-field>
+
+              <mat-form-field *ngIf="descriptors[name].model && descriptors[name].model.type=='control' && descriptors[name].model.input=='icon'">
+                <mat-icon>{{ properties[name] }}</mat-icon>
+
+                <mat-select [placeholder]="name" #p
+                            [formControlName]="name"
+                            (openedChange)="descriptors[name].model.opened = $event;"
+                            (selectionChange)="set({target:{ name: name, value: $event.value }})">
+                    <mat-option *ngFor="let option of service.icons"
+                                [value]="option">
+                      <mat-icon>{{ option }}</mat-icon><label *ngIf="descriptors[name].model.opened">{{ option }}</label>
+                    </mat-option>
+                </mat-select>
+
+                <mat-error *ngIf="errors[name] && errors[name].length>0">
+                  <div *ngFor="let error of errors[name]" color="accent">   {{ error.message }} </div>
+                </mat-error>
+                <mat-hint *ngIf="messages[name] && messages[name].length>0" color="accent">
+                  <div *ngFor="let hint of messages[name]" color="accent">  {{ hint }} </div>
+                </mat-hint>
+              </mat-form-field>
+
+              <div *ngIf="descriptors[name].model && descriptors[name].model.type=='control' && descriptors[name].model.input=='file'">
+                <mat-label style="color: black;"> {{ descriptors[name].label||name }} </mat-label>
+                <input type="file" hidden [formControlName]="name" >
+                <!-- <app-upload (change)="set( { target: {name: name, value: $event }} )" [accepts]="descriptors[name].model.accepts" ></app-upload> -->
+                <mat-error *ngIf="errors[name] && errors[name].length>0">
+                  <div *ngFor="let error of errors[name]" color="accent">   {{ error.message }} </div>
+                </mat-error>
+                <mat-hint *ngIf="messages[name] && messages[name].length>0" color="accent">
+                  <div *ngFor="let hint of messages[name]" color="accent">  {{ hint }} </div>
+                </mat-hint>
+              </div>
+
+              <div *ngIf="descriptors[name].model && descriptors[name].model.type=='control' && descriptors[name].model.input=='checkbox'" style="padding: 5px;" >
+
+                <div>
+                  <mat-checkbox #checkbox [name]="name" [checked]="properties[name]" [formControlName]="name">
+                    <label> {{ descriptors[name].label||name }} {{ checkbox.value }} </label>
+                  </mat-checkbox>
+                </div>
+                <mat-error *ngIf="errors[name] && errors[name].length>0">
+                  <div *ngFor="let error of errors[name]" color="accent">   {{ error.message }} </div>
+                </mat-error>
+                <mat-hint *ngIf="messages[name] && messages[name].length>0" color="accent">
+                  <div *ngFor="let hint of messages[name]" color="accent">  {{ hint }} </div>
+                </mat-hint>
+              </div>
+
+
+
+
+
+              <div *ngIf="descriptors[name].model && descriptors[name].model.type=='control' && descriptors[name].model.input=='radiogroup'">
+                <label> {{ descriptors[name].label||name }}</label>
+                <mat-radio-group (change)="set({target:{ name: name, value: $event.value }})"
+
+                                [formControlName]="name"
+                                [value]="properties[name]" >
+                  <mat-radio-button *ngFor="let option of descriptors[name].model.options"
+
+                                    [value]="option"> {{ option }} </mat-radio-button>
+                </mat-radio-group>
+                <mat-error *ngIf="errors[name] && errors[name].length>0">
+                  <div *ngFor="let error of errors[name]" color="accent">   {{ error.message }} </div>
+                </mat-error>
+                <mat-hint *ngIf="messages[name] && messages[name].length>0" color="accent">
+                  <div *ngFor="let hint of messages[name]" color="accent">  {{ hint }} </div>
+                </mat-hint>
+              </div>
+            </div>
+
+            <!-- structure type of model -->
+            <div>
+
+
+              <div *ngIf="descriptors[name].model && descriptors[name].model.type=='structure' && descriptors[name].model.input=='object'">
+                <label> {{ descriptors[name].label||name }}</label>
+                <button (click)="descriptors[name].editor = properties[name]"> edit </button>
+                <input-form [properties]="descriptors[name].editor" *ngIf="descriptors[name].editor"></input-form>
+              </div>
+
+              <div *ngIf="descriptors[name].model && descriptors[name].model.type=='structure' && descriptors[name].model.input=='array'">
+                <div>
+
+
+
+                  <label style="width: 100%;">
+
+                    <button (click)="descriptors[name].model.visible = true"
+                            *ngIf="descriptors[name].model.userInterfaceMode && !descriptors[name].model.visible">
+
+                      <div style="display: flex; flex-direction: row; width: 100%;">
+                        <label>{{ descriptors[name].label||name }}</label>
+                        <mat-icon style="justify-self: flex-end; margin-left: auto;"> edit </mat-icon>
+                      </div>
+                    </button>
+
+
+                    <div *ngIf="!descriptors[name].model.userInterfaceMode || descriptors[name].model.addElementPaneVisible">
+                      <table>
+                        <tr>
+                          <td *ngFor="let col of descriptors[name].model.columns"> {{ col }} </td>
+                        </tr>
+                        <tr *ngFor="let row of properties[name]">
+                          <td *ngFor="let col of descriptors[name].model.columns"> {{ row[col] }} </td>
+                        </tr>
+                      </table>
+                      <input-form [properties]="descriptors[name].model.prototype" [title]="name" [actions]="{ ok: properties[name].push }">
+                      </input-form>
+                    </div>
+                  </label>
+
+
+
+
+
+
+                </div>
+
+
+                <div *ngIf="descriptors[name].model && descriptors[name].model.visible">
+                  <div *ngIf="descriptors[name].model.primitive">
+                      <!-- <app-list [template]="listitemTemplate"
+                                [listitems]="properties[name]"
+                                [selectable]="true">
+                        <ng-template #listitemTemplate let-ctrl="ctrl">
+                          <mat-list-item>
+                            {{ ctrl }}
+                          </mat-list-item>
+                        </ng-template>
+
+                      </app-list> -->
+                  </div>
+
+                  <div *ngIf="descriptors[name].model && !descriptors[name].model.primitive"
+                      class="app-content-box">
+                      <div class="app-front-pane" style="width: 100%;">
+                        <button matButton><mat-icon (click)="descriptors[name].model.addElementPaneVisible=true"> add </mat-icon></button>
+                        <!-- <button matButton [disabled]="!structTable.selection.selected || structTable.selection.selected.length===0" (click)="structTable.remove()"><mat-icon> remove </mat-icon></button> -->
+                        <!-- <button matButton [disabled]="!structTable.selection.selected || structTable.selection.selected.length!==1" (click)="structTable.edit()"><mat-icon> edit </mat-icon></button> -->
+                      </div>
+                      <div>
+
+
+                        <!-- <app-table [columns]="descriptors[name].model.columns"
+                                  #structTable
+                                  [dataset]="properties[name]">
+                        </app-table> -->
+                      </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom"
+           style="width: 100%; font-size: 20px; display: flex; flex-direction: column; align-items: center;" >
+
+           <ng-content></ng-content>
+      </div>
+
+    </div>
+    <div class="actions-bar" style="width: 100%;">
+
+
+
+      <div align="right" style="padding: 16px;">
+        <ng-content select="button"></ng-content>
+        <button mat-raised-button *ngFor="let action of getActionNames()" (click)="actions[action](properties)" [disabled]="getModelValidationState()==='INVALID'" >{{action}}</button>
+      </div>
+    </div>
+
+  <!-- </app-frame-pane> -->
+
+</form>

@@ -1,0 +1,39 @@
+.mat-form-field{
+  font-size: 18px;
+}
+mat-form-field{
+  width: 100%;
+  color: black;
+}
+mat-radio-button{
+   padding-left: 10px;
+}
+mat-label{
+  color: black;
+}
+/*mat-form-field.ng-valid *{
+  color: #4CAF50;
+}*/
+mat-form-field.ng-invalid *{
+  color: red;
+}
+mat-form-field.ng-untouched *{
+  color: var(--dark-primary-color);
+}
+/*.ng-pending{
+  background-color: blue;
+  color: white;
+}
+.ng-pristine{
+  background-color: blueviolet;
+  color: white;
+}
+.ng-dirty{
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.ng-touched{
+  background-color: midnightblue;
+  color: white;
+} */

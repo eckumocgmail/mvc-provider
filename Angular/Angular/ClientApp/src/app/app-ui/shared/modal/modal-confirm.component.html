@@ -1,0 +1,18 @@
+<div class="modal fade bd-example-modal-lg" tabindex="-1" [attr.id]="'modal_'+this.id" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <app-frame>
+        <div class="frame-header">
+          <button type="button" class="close" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <ng-content></ng-content>
+        <div class="frame-footer" align="right">
+          <button class="btn btn-primary m-1" (click)="success()"> ok </button>
+          <button class="btn btn-primary m-1" (click)="failed()"> cancel </button>
+        </div>
+      </app-frame>
+    </div>
+  </div>
+</div>

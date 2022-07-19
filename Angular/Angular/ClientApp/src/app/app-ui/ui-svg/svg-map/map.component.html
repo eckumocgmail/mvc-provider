@@ -1,0 +1,60 @@
+
+<button style="width: 50%; height: 50%; display: flex; flex-direction: column;  " #layout>
+
+  <svg version="1.1" [attr.height]="height" [attr.width]="width" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0" y="0" [attr.viewBox]="'0 0 '+width+' '+height"
+      xml:space="preserve"
+      style="border: 1px solid black"
+      fill="292F33">
+
+      <!-- <image xlink:href="/assets/map.jpg" [attr.width]="width" [attr.height]="height" x="0" y="0"/> -->
+      <rect [attr.width]="width" [attr.height]="height" style="stroke-width:3;stroke:rgb(0,0,0)" />
+
+      <circle [attr.cy]="toInt(((agent.item.py-minY)/(maxY-minY))*height)" [attr.cx]="toInt(((agent.item.px-minX)/(maxX-minX))*width)" r="3"
+              *ngFor="let agent of dataset"
+              style="fill:lime;stroke:purple;stroke-width:1" />
+
+
+
+  </svg>
+</button>
+<!-- <div style="width: 100%; height: 100%; display: flex; flex-direction: column;" > -->
+    <!-- <div style="width: 100%;">
+      x:[{{ minX }}-{{ maxX }}]
+      y:[{{ minY }}-{{ maxY }}]
+      <button (click)="showControls = showControls? false: true"> showControls</button> <button (click)="refresh()"> refresh</button>
+      <div *ngIf="showControls">
+
+
+
+      </div>
+      <button (click)="refresh()" id="random_button"> refresh </button>
+      <button (click)="start()" id="random_button"> random </button>
+      width<input type="number" (input)="width=$event.target.value">
+      height<input type="number" (input)="height=$event.target.value">
+    </div> -->
+<!--
+    <button  style="width: 100%; height: 100%; position: fixed;" #p id="map_layout" style="position: absolute;">
+      <button [ngStyle]="{'left': toInt( ((agent.item.py-minY)/(maxY-minY))*width)+'px', 'top': toInt(((agent.item.px-minX)/(maxX-minX))*height)+'px','position':'absolute'}"
+              *ngFor="let agent of dataset"
+              (click)="trace(agent) && dataset.splice(dataset.indexOf(agent),1)">
+              aasdasdasd{{ agent.item.id_message }}
+              {{'['+toInt( ((agent.item.py-minY)/(maxY-minY))*height)+','+toInt(((agent.item.px-minX)/(maxX-minX))*width)+']'}}
+              *{{agent.item.id_message}}
+      </button>
+    </button> -->
+    <!-- [attr.viewBox]="'0 0 '+width+' '+height" -->
+
+
+    <!-- <div>{{ width }} x {{ height }}</div> -->
+    <!-- <div>{{ p.clientWidth }} x {{ p.clientHeight}}</div> -->
+  <!-- </div> -->
+
+<!--
+  Map {{ agents.length }}
+
+
+
+
+
+ -->

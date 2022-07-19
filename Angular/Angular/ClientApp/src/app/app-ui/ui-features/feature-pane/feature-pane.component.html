@@ -1,0 +1,95 @@
+<!--
+    |=======================================================|
+    | icon | title                             | window-bar |
+    |-------------------------------------------------------|
+    | tool-bar                                              |
+    |=======================================================|
+    |                                                       |
+    |                  scrollable content                   |
+    |                                                       |
+    |                                                       |
+    |=======================================================|
+    |                                          action-bar   |
+    |-------------------------------------------------------|
+    | progress-bar |      task-bar            | status-bar  |
+    |=======================================================|
+ -->
+
+ <div class="app-content-box"
+      style="width: 100%; height: 100%; border-radius: 2px; border: 1px solid var(--primary-color);"
+      [ngClass]="statusModel">
+<layout-column class="app-max-size"  style="width: 100%; height: 100%;">
+    <div class="top app-max-width" style="display: flex; flex-direction: column;">
+        <div class="header app-max-width app-front-pane" style="display: flex; flex-direction: row; padding: 8px;">
+
+
+            <div style="font-size: 20px; padding: 3px;">
+                <!-- <app-logo></app-logo> -->
+                {{ title }} </div>
+
+            <div class="window-bar" style="justify-self: flex-end; margin-left: auto; padding: 3px;  " *ngIf="!isRoot" >
+                <mat-icon> edit </mat-icon>
+                <mat-icon> settings_overscan </mat-icon>
+                <mat-icon (click)="setFullScreenMode()"> fullscreen </mat-icon>
+                <mat-icon (click)="close()"> close </mat-icon>
+            </div>
+        </div>
+        <div class="app-max-width app-front-pane">
+            <ng-content select=".top"></ng-content>
+        </div>
+        <!-- <div class="progress-bar" style="width: 100%;">
+            <mat-progress-bar [mode]="'indeterminate'"></mat-progress-bar>
+        </div> -->
+        <div class=" app-max-width" style="width: 100%; background-color: var(--secondary-text-color); color: var(--light-color); border-radius: 2px; border: 1px solid var(--primary-color); display: flex; flex-direction: row;  ">
+
+            <!-- <mat-icon> help </mat-icon>
+            <mat-icon> add </mat-icon>
+            <mat-icon> remove </mat-icon>
+            <mat-icon> edit </mat-icon>
+            <mat-icon> view_column </mat-icon>
+            <mat-icon> view_headline </mat-icon>
+            <mat-icon> people </mat-icon>
+            <mat-icon> person_add </mat-icon>
+
+            <div class=" app-max-width" style="justify-self: flex-end; margin-left: auto;"  >
+                <mat-icon class="turn"> expand_more </mat-icon>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="app-max-size"  style="width: 100%; height: 100%; overflow-y: auto; border-radius: 0px;" >
+
+
+      <app-line-pane #side style="width: 100%; height: 100%;">
+        <div class="left">
+          <ng-content select=".left"></ng-content>
+        </div>
+        <ng-content select="*:not(.left):not(.right)"></ng-content>
+        <div class="right">
+          <ng-content select=".right"></ng-content>
+        </div>
+      </app-line-pane>
+    </div>
+    <div class="bottom app-max-width" style="display: flex; flex-direction: column;">
+        <div class="action-bar app-max-width"  style="display: flex; flex-direction: row; justify-content: flex-end;">
+
+            <!-- <button mat-raised-button
+                    class="button dark-primary-color accent-color"
+                    style="margin: 10px;">
+                    ok
+            </button>
+            <button  mat-raised-button
+                     class="button dark-primary-color accent-color"
+                     style="margin: 10px;">
+                    cancel
+            </button> -->
+
+        </div>
+        <div class="app-max-width"  style="display: flex; flex-direction: row;">
+            <div class="status-bar">
+                {{ statusText }}
+            </div>
+        </div>
+    </div>
+</layout-column>
+</div>

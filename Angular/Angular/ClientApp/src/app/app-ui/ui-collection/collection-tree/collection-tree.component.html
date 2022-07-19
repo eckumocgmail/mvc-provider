@@ -1,0 +1,35 @@
+
+<mat-list style="padding-left: 16px; width: 100%; margin: 0px;">
+   <div *ngFor="let ctrl of nodelist">
+      <mat-list-item (click)="click( ctrl, $event )">
+         <ng-container *ngTemplateOutlet="template || defaults; context: { ctrl: ctrl, ctx: this }"></ng-container>
+      </mat-list-item>
+      <collection-tree *ngIf="ctrl.children && ctrl.children.length>0 && ctrl.expanded"
+                style="width: 100%;"
+                [template]="template"
+                (selected)="onSelect.emit( $event )"
+                [draggable]="draggable"
+                [droppable]="droppable"
+                [selectable]="selectable"
+                [nodelist]="ctrl.children"
+                (keypress)="keypress($event)">
+      </collection-tree>
+    </div>
+</mat-list>
+
+<ng-template #defaults let-ctrl="ctrl" let-ctx="ctx" matLine>
+   <div style="width: 100%; display: flex; flex-direction: row;">
+
+
+      <mat-icon *ngIf="ctrl.icon && ctrl.icon.svg" [svgIcon]="ctrl.icon.name"></mat-icon>
+      <mat-icon *ngIf="ctrl.icon && !ctrl.icon.svg">{{ctrl.icon}}</mat-icon>
+
+      <label style="font-size: 18.72px;"> {{ ctrl.label }}
+         <b *ngIf="ctrl.children && ctrl.children.length>0"> {{ ' ('+ctrl.children.length+')' }}</b>
+      </label>
+      <mat-icon style="justify-self: flex-end; margin-left: auto;"
+                *ngIf="ctrl.children && ctrl.children.length>0">
+         {{ ctrl.expanded ? 'expand_more' : 'chevron_right' }}
+      </mat-icon>
+   </div>
+</ng-template>

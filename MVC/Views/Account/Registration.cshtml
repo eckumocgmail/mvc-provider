@@ -1,0 +1,226 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, NetCoreConstructorAngular
+@{
+    ViewData["Title"] = "Регистрация пользователя";
+}
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model ApplicationMVC.Views.Account.RegistrationModel
+    <script src="https://www.google.com/recaptcha/api.js" onerror="alert('не загрузить '+this.src)"></script>
+    <!-- Вспомогательные функции -->
+    <script>
+        function setPlaceholderFor(propertyName) {
+            document.getElementById(propertyName + "Input").placeholder =
+                document.getElementById(propertyName + "Label").innerHTML;
+        }
+        function setValidationStateFor(propertyName, validationState) {
+
+            document.getElementById(propertyName + "Input").classList.add("is-" + validationState);
+        }
+    </script>
+
+    <style>
+        .card-1 {
+            padding: 20px;
+            border: 1px solid rgba(0,0,0,0.22);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+            transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        }
+
+            .card-1:hover {
+                box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+            }
+    </style>
+
+    <div class="container card-1" style="width: 640px; padding: 20px;">
+        <div class="row">
+
+            <div class="col-12">
+
+                <inline>
+
+                    <h2 class="display-4"> Регистрация </h2>
+                </inline>
+
+                <form asp-antiforgery="true" style="width: 100%;" class="init">
+                    <p print-text="Для регистрации заполните анкету. В анкете следует указывать только Ваши личные сведения. Эти сведения необходимы для корректной работы в системе. "></p>
+                    <div class="text-danger"> @Model.ErrorMessage </div>
+                    <div class="validation" style="color: red;" asp-validation-summary="All"></div>
+
+                    <div class="container">
+                        <inline class="row">
+                            <div class="col-lg-6 col-sm-6">
+                                <div>
+
+                                    <!-- Email -->
+                                    <label asp-for="Email" id="EmailLabel"></label>
+                                    <div class="input-group">
+                                        <input asp-for="Email"
+                                               class="form-control is-@Model.EmailValidationState"
+                                               id="EmailInput">
+                                        <script>setPlaceholderFor("Email");</script>
+                                    </div>
+                                    <div>
+                                        <span class="text-danger" asp-validation-for="Email"></span>
+                                    </div>
+
+                                    <!-- Password -->
+                                    <label asp-for="Password" id="PasswordLabel"></label>
+                                    <div class="input-group">
+
+                                        <input asp-for="Password"
+                                               class="form-control is-@Model.PasswordValidationState"
+                                               id="PasswordInput">
+                                        <script>setPlaceholderFor("Password");</script>
+                                    </div>
+                                    <div>
+                                        <span class="text-danger" asp-validation-for="Password"></span>
+                                    </div>
+
+                                    <!-- Confirmation -->
+                                    <label asp-for="Confirmation" id="ConfirmationLabel"></label>
+                                    <div class="input-group">
+                                        <input asp-for="Confirmation"
+                                               class="form-control is-@Model.ConfirmationValidationState"
+                                               id="ConfirmationInput">
+                                        <script>setPlaceholderFor("Confirmation");</script>
+                                    </div>
+                                    <div>
+                                        <span class="text-danger" asp-validation-for="Confirmation"></span>
+                                    </div>
+                                    <!-- Tel -->
+
+                                    <label asp-for="Tel" id="TelLabel"></label>
+                                    <div class="input-group">
+                                        <input asp-for="Tel"
+                                               type="text"
+                                               oninput="onTelInput(event)"
+                                               class="form-control is-@Model.TelValidationState"
+                                               id="TelInput">
+                                        <script>setPlaceholderFor("Tel");</script>
+                                    </div>
+                                    <script>
+                                        var temp = document.getElementById("TelInput").value;
+                                        var tempPhonneNumnerLength = 0;
+                                        function onTelInput(evt) {
+                                            var s = '';
+                                            var v = evt.target.value;
+                                            for (let i = 0; i < v.length; i++) {
+                                                if ("0123456789-".indexOf(v[i]) != -1) {
+                                                    s += v[i];
+                                                    if (s.length > 13) {
+                                                        break;
+                                                    }
+                                                }
+
+                                            }
+                                            if (s.length > 1 && s[1] != '-') s = s.substring(0, 1) + '-' + s.substring(1)
+                                            if (s.length > 4 && s[5] != '-') s = s.substring(0, 5) + '-' + s.substring(5)
+                                            if (s.length > 8 && s[9] != '-') s = s.substring(0, 9) + '-' + s.substring(9)
+                                            v = s;
+                                            console.log(v);
+                                            if (v.endsWith('-'))
+                                                v = v.substring(0, v.length - 1);
+                                            tempPhonneNumnerLength = v;
+                                            document.getElementById("TelInput").value = v;
+                                        }
+                                    </script>
+                                    <div style="margin: 10px;">
+                                        <span class="text-danger" asp-validation-for="Tel"></span>
+                                    </div>
+                                    <hr style="width: 100%;" />
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6">
+                                <div>
+
+
+
+                                    <!-- SurName -->
+                                    <label asp-for="SurName" id="SurNameLabel"></label>
+                                    <div class="input-group">
+                                        <input asp-for="SurName"
+                                               class="form-control is-@Model.SurNameValidationState"
+                                               id="SurNameInput">
+                                        <script>setPlaceholderFor("SurName");</script>
+                                    </div>
+                                    <div>
+                                        <span class="text-danger" asp-validation-for="SurName"></span>
+                                    </div>
+
+
+                                    <!-- FirstName -->
+                                    <label asp-for="FirstName" id="FirstNameLabel"></label>
+                                    <div class="input-group">
+                                        <input asp-for="FirstName"
+                                               class="form-control is-@Model.FirstNameValidationState"
+                                               id="FirstNameInput">
+                                        <script>setPlaceholderFor("FirstName");</script>
+                                    </div>
+                                    <div>
+                                        <span class="text-danger" asp-validation-for="FirstName"></span>
+                                    </div>
+
+
+                                    <!-- LastName -->
+                                    <label asp-for="LastName" id="LastNameLabel"></label>
+                                    <div class="input-group">
+                                        <input asp-for="LastName"
+                                               class="form-control is-@Model.LastNameValidationState"
+                                               id="LastNameInput">
+                                        <script>setPlaceholderFor("LastName");</script>
+                                    </div>
+                                    <div>
+                                        <span class="text-danger" asp-validation-for="LastName"></span>
+                                    </div>
+
+
+                                    <!-- Birthday -->
+                                    <label asp-for="Birthday" id="BirthdayLabel"></label>
+                                    <div class="input-group">
+                                        <input asp-for="Birthday"
+                                               class="form-control is-@Model.BirthdayValidationState"
+                                               id="BirthdayInput">
+                                        <script>setPlaceholderFor("Birthday");</script>
+                                    </div>
+                                    <div>
+                                        <span class="text-danger" asp-validation-for="Birthday"></span>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+
+                        </inline>
+
+                    </div>
+               
+                    <div style="display: flex; flex-direction: row; flex-wrap: nowrap;">
+                        <div style=" padding: 10px; justify-self: flex-end; margin-left: auto;">
+
+                            <button type="submit" class="btn btn-primary">
+                                Зарегистрировать
+                            </button>
+
+                        </div>
+                    </div>
+                    <div align="center" style="padding: 10px;">
+                        <div class="g-recaptcha" data-sitekey="6Lc-MeMZAAAAAFy2KYk4UH-ZX1TJdsu6wvVLAyfY" style="padding-top:12px;"></div>
+                        <div class="text-danger">
+                            @if (TempData["recaptcha"] != null)
+                            {
+                                <p>@TempData["recaptcha"]</p>
+                            }
+                        </div>
+                        <a asp-controller="Account" asp-action="Login">На страницу авторизации</a>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>

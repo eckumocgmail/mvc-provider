@@ -1,0 +1,12 @@
+<mat-expansion-panel (opened)="opened = true"
+                     (closed)="opened = false">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <ng-content select=".summary"></ng-content>
+        </mat-panel-title>
+        <mat-panel-description>
+            <ng-content select=".details"></ng-content>
+        </mat-panel-description>
+    </mat-expansion-panel-header>
+    <ng-content select="*:not(.summary):not(.details)"></ng-content>
+</mat-expansion-panel>

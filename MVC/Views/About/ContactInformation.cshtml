@@ -1,0 +1,21 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, NetCoreConstructorAngular
+@{
+    ViewData["Title"] = "Контактная информация";
+    if (ViewContext.HttpContext.Request.Headers.ContainsKey("ajax") == false) { Layout = "~/Views/Shared/_Layout.cshtml"; }
+   
+}
+ 
+ 
+<div class="text-center" class="content-box" ng-init="theme='app-black'">
+    <div>
+        <h1 class="display-4"> Контактная информация </h1>
+    </div>
+    <p>
+        Батов Константин Александрович, разработчик приложения:
+        <a href="mailto:eckumoc@gmail.com">eckumoc@gmail.com</a>         
+    </p>
+    
+
+</div>
+ 

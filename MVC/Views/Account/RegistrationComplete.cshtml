@@ -1,0 +1,17 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, NetCoreConstructorAngular
+@{
+    ViewData["Title"] = "Регистрация пользователя";
+}
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model ApplicationMVC.Views.Account.RegistrationModel
+
+
+<div class="text-center" style="padding: 20px;"  class="front-pane init">
+    <h1 class="display-4">Регистрация завершена</h1>
+    <p>На вашу электронную почту отправлено письмо с ссылкой для активации учетной записи.</p>
+    <div><a asp-controller="Account" asp-action="Login">На страницу авторизации</a></div>
+</div>

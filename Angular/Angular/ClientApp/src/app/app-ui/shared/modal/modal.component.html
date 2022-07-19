@@ -1,0 +1,13 @@
+<div class="modal fade bd-example-modal-lg" tabindex="-1" [attr.id]="'modal_'+this.id" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <app-frame>
+        <div class="frame-header">
+          <ng-content select=".top"></ng-content>
+        </div>
+        <ng-content select="*:not(.top)"></ng-content>
+
+      </app-frame>
+    </div>
+  </div>
+</div>

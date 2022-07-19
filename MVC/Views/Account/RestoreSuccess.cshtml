@@ -1,0 +1,35 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, NetCoreConstructorAngular
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model ApplicationMVC.Views.Account.RestoreModel
+<!-- Вспомогательные функции -->
+<script>
+    function setPlaceholderFor(propertyName) {
+        document.getElementById(propertyName + "Input").placeholder =
+            document.getElementById(propertyName + "Label").innerHTML;
+    }
+    function setValidationStateFor(propertyName, validationState) {
+
+        document.getElementById(propertyName + "Input").classList.add("is-" + validationState);
+    }
+</script>
+
+
+<form asp-antiforgery="true" style="padding: 20px;"  class="front-pane init">
+
+    <h2> Восстановление доступа </h2>
+    <div class="validation" style="color: red;" asp-validation-summary="All"></div>
+
+    <p> На @Model.Email отправлено письмо с дальнейшими инструкциями </p>
+
+    <div><a href="https://@Model.Email.Substring(Model.Email.IndexOf("@")+1)">просмотр почтового ящика</a></div>
+    <div><a asp-controller="Account" asp-action="Login"> на страницу авторизации</a></div>
+    <div>
+        <span class="text-danger"> @Model.ErrorMessage </span>
+    </div><br />
+
+</form>
+

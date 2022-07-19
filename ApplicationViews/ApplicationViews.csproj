@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ComboboxView\ComboboxView.csproj" />
+    <ProjectReference Include="..\ContextMenuView\ContextMenuView.csproj" />
+    <ProjectReference Include="..\FormView\FormView.csproj" />
+    <ProjectReference Include="..\GridView\GridView.csproj" />
+    <ProjectReference Include="..\ListView\ListView.csproj" />
+    <ProjectReference Include="..\TableView\TableView.csproj" />
+    <ProjectReference Include="..\TreeView\TreeView.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@addTagHelper *, NetCoreConstructorAngular
+@foreach (var p in ViewContext.HttpContext.Request.Cookies)
+{
+    <p>@p.Key</p>
+    <p>@p.Value</p>
+}

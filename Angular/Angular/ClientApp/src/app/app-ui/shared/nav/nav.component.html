@@ -1,0 +1,8 @@
+<nav class="nav nav-pills nav-justified" style="display: flex;"
+     [style.flexDirection]="vertical? 'column': 'row'">
+  <a class="nav-link" style="margin: 3px;"
+     *ngFor="let link of links"
+     [routerLinkActive]="['active']" [routerLink]="[link.path]">
+     {{ link.path }}
+  </a>
+</nav>

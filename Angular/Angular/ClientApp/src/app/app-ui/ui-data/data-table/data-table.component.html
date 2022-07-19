@@ -1,0 +1,31 @@
+<div>
+  <h4>{{title}}</h4>
+  <div style="padding: 20px;">
+    <ng-content select=".top"></ng-content>
+  </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th *ngFor="let attribute of columns">{{attribute.label}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let datarow of dataset">
+        <td *ngFor="let attribute of columns"
+          [attr.class]="datarow['selected']? 'selected': ''"
+          [attr.draggable]="draggable"
+          [attr.droppable]="draggable"
+          (dragstart)="dragStart( $event,datarow )"
+          (dragover)="dragOver( $event )"
+          (dragover)="dragLeave( $event )"
+          (drop)="drop( $event )"
+          (click)="select( datarow )">
+
+          {{ attribute.type=='date'? (datarow[attribute.name]| date:'dd.MM.yyyy'): datarow[attribute.name] }}
+
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

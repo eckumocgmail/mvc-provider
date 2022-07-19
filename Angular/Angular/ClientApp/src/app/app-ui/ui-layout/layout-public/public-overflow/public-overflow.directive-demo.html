@@ -1,0 +1,54 @@
+<!-- <div class="flex-row cover">
+    <div class="flex max-height">
+        <div class="flex-column cover scroll-y">
+            <button *ngFor="let item of items" class="card"> {{ item }} </button>     
+        </div>
+    </div>
+    <div class="cover scroll-x flex-column-wrap" #p overflowListener (overflowChanged)="transform($event)">
+        
+        <button (click)="optinal.push(optinal.length)" class="flex card" > add </button>     
+
+        <p> {{ p.OverflowListener.updated }} </p>     
+        <p *ngIf="p.OverflowListener.diff"> {{ p.OverflowListener.diff.dw+','+p.OverflowListener.diff.dh }} </p>     
+        <p> {{ p.OverflowListener.isOverflow? 'true': 'false' }} </p>     
+
+        <button *ngFor="let item of optinal" class="flex card" > {{ item }} </button>     
+                 
+    </div>     
+    <div class="flex max-height">
+        <div class="flex-column cover scroll-y">
+            <button *ngFor="let item of items" class="card"> {{ item }} </button>
+     
+        </div>
+    </div>
+</div>   
+
+ -->
+
+
+
+<div class="flex-column cover">
+    <div class="flex max-width">
+        <button (click)="optinal.push(optinal.length)" class="flex max-width" > add </button>
+    </div>
+    <div class="flex max-width">
+
+        <div class="flex-row cover scroll-x" #p overflowListener (overflowChanged)="transform( $event )">
+            <button *ngFor="let item of optinal" class="flex card" > {{ item }} </button>  
+        </div>
+
+    </div>    
+    <div class="cover scroll-y flex-row-wrap">
+              
+      
+            <button *ngFor="let item of items" class="flex card" > {{ item }} </button>
+        
+                 
+    </div>     
+    <div class="flex max-width">
+        <div class="flex-row cover scroll-x">
+            <button *ngFor="let item of items" class="card"> {{ item }} </button>
+     
+        </div>
+    </div>
+</div> 

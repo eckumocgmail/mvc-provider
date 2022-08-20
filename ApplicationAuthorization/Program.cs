@@ -6,7 +6,7 @@ namespace ServiceAuthorization
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            OAuthClient.Test();
         }
     }
 }

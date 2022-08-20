@@ -16,7 +16,7 @@ namespace Areas.BossFace.Controllers
     [Area("BossFace")]
     public class BossController : NavigationController
     {
-        public BossController(UserModelsService service) : base(service)
+        public BossController(UserModelsService serviceProvider) : base(serviceProvider)
         {
 
         }

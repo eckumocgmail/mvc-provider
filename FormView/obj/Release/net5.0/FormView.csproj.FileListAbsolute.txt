@@ -1,0 +1,15 @@
+D:\Projects\mvc-provider\FormView\bin\Release\net5.0\FormView.deps.json
+D:\Projects\mvc-provider\FormView\bin\Release\net5.0\FormView.dll
+D:\Projects\mvc-provider\FormView\bin\Release\net5.0\FormView.pdb
+D:\Projects\mvc-provider\FormView\obj\Release\net5.0\FormView.csproj.AssemblyReference.cache
+D:\Projects\mvc-provider\FormView\obj\Release\net5.0\FormView.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\mvc-provider\FormView\obj\Release\net5.0\FormView.AssemblyInfoInputs.cache
+D:\Projects\mvc-provider\FormView\obj\Release\net5.0\FormView.AssemblyInfo.cs
+D:\Projects\mvc-provider\FormView\obj\Release\net5.0\FormView.csproj.CoreCompileInputs.cache
+D:\Projects\mvc-provider\FormView\obj\Release\net5.0\scopedcss\bundle\FormView.styles.css
+D:\Projects\mvc-provider\FormView\obj\Release\net5.0\staticwebassets\FormView.StaticWebAssets.Manifest.cache
+D:\Projects\mvc-provider\FormView\obj\Release\net5.0\FormView.RazorTargetAssemblyInfo.cache
+D:\Projects\mvc-provider\FormView\obj\Release\net5.0\FormView.dll
+D:\Projects\mvc-provider\FormView\obj\Release\net5.0\refint\FormView.dll
+D:\Projects\mvc-provider\FormView\obj\Release\net5.0\FormView.pdb
+D:\Projects\mvc-provider\FormView\obj\Release\net5.0\ref\FormView.dll

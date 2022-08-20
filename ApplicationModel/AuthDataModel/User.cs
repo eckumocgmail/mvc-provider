@@ -83,10 +83,8 @@ namespace ApplicationDb.Entities
         public virtual List<Message> Outbox { get; set; }
         public virtual List<BusinessFunction> BusinessFunctions { get; set; }
 
-        public string GetHomeUrl()
-        {
-            return "/Home/Index";
-        }
+        public string GetHomeUrl() => "/Home/Index";
+        public string GetUserHomeUrl() => "/UserFace/User/UserHome";
         /*
 public string GetFullName()
 {

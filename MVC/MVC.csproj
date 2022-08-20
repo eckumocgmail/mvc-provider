@@ -19,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\AdminFace\Middleware\" />
     <Folder Include="Areas\AnaliticFace\Entities\" />
     <Folder Include="Areas\AnaliticFace\Services\" />
     <Folder Include="Areas\BossFace\Entities\" />

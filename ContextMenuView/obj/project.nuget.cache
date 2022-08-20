@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QqqWLUHs+s4lXotm07BgYkPMxttW7qfQnNN1WPV2rq8sc+LLEx63sl1AbZ3mCQl/lOGGgmCSXLm2rx86b1986A==",
+  "dgSpecHash": "kGI5CCwtlaUi2OUto1UWfA966qo/LSqRLoWKWvLPEYHXTi6aOFkfjndy0WRV1qWkq/3012bEKVL1Qm/odvRyfQ==",
   "success": true,
-  "projectFilePath": "D:\\NetProjects2025\\MVC-Provider\\ContextMenuView\\ContextMenuView.csproj",
+  "projectFilePath": "D:\\Projects\\mvc-provider\\ContextMenuView\\ContextMenuView.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

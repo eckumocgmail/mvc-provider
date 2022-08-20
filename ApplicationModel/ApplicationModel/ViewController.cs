@@ -8,7 +8,7 @@ namespace ApplicationModel.ApplicationModel
 {
     public class ViewController : AbstractController
     {
-        public ViewController()
+        public ViewController(IServiceProvider serviceProvider): base(serviceProvider)
         {
         }
     }

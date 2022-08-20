@@ -11,7 +11,8 @@ public static class ProxyUrlExtension
 {
     public static IApplicationBuilder UseProxyServer( this IApplicationBuilder builder )
     {
-        return builder.UseMiddleware<ProxyComponent>( );             
+        //return builder.UseMiddleware<ProxyComponent>( );             
+        return builder;
     }
 }
 

@@ -40,6 +40,7 @@ using System.Collections.Generic;
         /// Страница авторизации
         /// </summary>
         public string HomePagePath { get; set; } = "/Home/Index";
+        public string PersonPagePath { get; set; } = "/UserFace/User/UserHome";
         public string LoginPagePath { get; set; } = "/Account/Login";
 
         /// <summary>

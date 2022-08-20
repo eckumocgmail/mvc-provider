@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "Hash": "tJdFwJTedWUkq4Z+2BPA74kmwRZe4B9yNRMx+mgequY=",
+  "Source": "ApplicationAuthorization",
+  "BasePath": "_content/ApplicationAuthorization",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\Projects\\mvc-provider\\ComboboxView\\ComboboxView.csproj",
+      "Version": 1,
+      "Source": "ComboboxView",
+      "GetPublishAssetsTargets": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectStaticWebAssetsV2",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier"
+    },
+    {
+      "Identity": "D:\\Projects\\mvc-provider\\ContextMenuView\\ContextMenuView.csproj",
+      "Version": 1,
+      "Source": "ContextMenuView",
+      "GetPublishAssetsTargets": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectStaticWebAssetsV2",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier"
+    },
+    {
+      "Identity": "D:\\Projects\\mvc-provider\\FormView\\FormView.csproj",
+      "Version": 1,
+      "Source": "FormView",
+      "GetPublishAssetsTargets": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectStaticWebAssetsV2",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier"
+    },
+    {
+      "Identity": "D:\\Projects\\mvc-provider\\GridView\\GridView.csproj",
+      "Version": 1,
+      "Source": "GridView",
+      "GetPublishAssetsTargets": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectStaticWebAssetsV2",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier"
+    },
+    {
+      "Identity": "D:\\Projects\\mvc-provider\\ListView\\ListView.csproj",
+      "Version": 1,
+      "Source": "ListView",
+      "GetPublishAssetsTargets": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectStaticWebAssetsV2",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier"
+    },
+    {
+      "Identity": "D:\\Projects\\mvc-provider\\TableView\\TableView.csproj",
+      "Version": 1,
+      "Source": "TableView",
+      "GetPublishAssetsTargets": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectStaticWebAssetsV2",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier"
+    },
+    {
+      "Identity": "D:\\Projects\\mvc-provider\\TreeView\\TreeView.csproj",
+      "Version": 1,
+      "Source": "TreeView",
+      "GetPublishAssetsTargets": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectStaticWebAssetsV2",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier"
+    },
+    {
+      "Identity": "D:\\Projects\\mvc-provider\\ViewsCommon\\ViewsCommon.csproj",
+      "Version": 1,
+      "Source": "ViewsCommon",
+      "GetPublishAssetsTargets": "",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "TargetFramework;RuntimeIdentifier",
+      "GetBuildAssetsTargets": "GetCurrentProjectStaticWebAssetsV2",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "TargetFramework;RuntimeIdentifier"
+    }
+  ],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

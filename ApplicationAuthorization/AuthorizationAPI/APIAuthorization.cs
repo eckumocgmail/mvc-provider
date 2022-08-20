@@ -7,7 +7,9 @@ using System.Collections.Concurrent;
 
     public interface APIAuthorization: APIRegistration
     {
-        void Signout(bool? IsFront = false);
+    
+
+    void Signout(bool? IsFront = false);
 
 
 

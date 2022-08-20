@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9QCwZBkcXTXdZWZrojjnMkZXG6S8VzLv7JIVkeZ7ZsKIXl6A+6/2c8MpPVgIrbXSiQyL/Y2Pebj+dIv7eWkv+A==",
+  "dgSpecHash": "XMnvwSJhMu1juvkw4474+n4D/x2ZHiLp++XqBmvSoMRhHUZzAg0756aMwWws2fGumCsezg0tcZIkdk7Zqhp/XA==",
   "success": true,
-  "projectFilePath": "D:\\NetProjects2025\\MVC-Provider\\ButtonModule\\ButtonModule.csproj",
+  "projectFilePath": "D:\\Projects\\mvc-provider\\ButtonModule\\ButtonModule.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

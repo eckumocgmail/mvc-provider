@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+using System.Runtime.CompilerServices;
 
 using ApplicationModel.ApplicationModel;
 
@@ -7,7 +9,7 @@ using ApplicationMVC.Views.Account;
 using CoreHttp.Session;
 
 using Microsoft.AspNetCore.Mvc;
- 
+using Microsoft.Extensions.DependencyInjection;
 
 public class AccountController : PageController
 {
@@ -20,22 +22,21 @@ public class AccountController : PageController
     private readonly bool EnableEmailService = true;
     private readonly bool EnableRecaptcha = true;
 
-    
-    public AccountController(
-            IEmailService email,
-            UserModelsService models,
-            ApplicationDbContext db,
-            AuthorizationOptions options,
-            APIAuthorization authorization,
-            SessionTransientService<ViewContextDefault> request,
-            INotificationsService user):base(models)
+    public IEmailService email { get; set; }
+    public UserModelsService models { get; set; }
+    public ApplicationDbContext db { get; set; }
+    public AuthorizationOptions options { get; set; }
+    public APIAuthorization authorization { get; set; }
+    public SessionTransientService<ViewContextDefault> request { get; set; }
+    public INotificationsService user { get; set; }
+    public AccountController(IServiceProvider serviceProvider):base(serviceProvider)
     {
-        _request = request;
-        _authorization = authorization;
-        _notifications = user;
-        _db = db;
-        _email = email;
-        _options = options;
+        _request = request = serviceProvider.GetService<SessionTransientService<ViewContextDefault>>();
+        _authorization = authorization = serviceProvider.GetService<APIAuthorization>();
+        _notifications = user = serviceProvider.GetService<INotificationsService>();
+        _db = db = serviceProvider.GetService<ApplicationDbContext>();
+        _email = email = serviceProvider.GetService<IEmailService>();
+        _options = options = serviceProvider.GetService<AuthorizationOptions>();
     }
 
 
@@ -46,17 +47,32 @@ public class AccountController : PageController
     
     public IActionResult LoginAsUser()
     {
+
+        if (_authorization.HasUserWithEmail("eckumoc@gmail.com") == false)
+        {
+            _authorization.Signup("eckumoc@gmail.com", "eckumoc@gmail.com", 
+                "eckumoc@gmail.com", "Батов", "Константин", "Александрович", 
+                DateTime.Parse("26.08.1989"), "7-904-334-1124");
+            _db.Accounts.Find(_authorization.GetUserByEmail("eckumoc@gmail.com").AccountID).Activated = DateTime.Now;
+            _db.SaveChanges();
+        }
         
-        ApplicationDb.Entities.User user = _authorization.Signin("eckumoc@gmail.com", "Z6TcpJ07j0");
         bool signed = _authorization.IsSignin();
         if (signed)
         {
-            return Redirect("/Home/Index");
-            //return Redirect("/UserFace/User/UserHome");
+            if (_authorization.Verify().Account.Activated == null)
+            {
+                _authorization.Verify().Account.Activated = DateTime.Now;
+            }
+            return Redirect(_options.PersonPagePath);
         }
         else
         {
-            return RedirectToAction(_options.LoginPagePath);
+            
+
+            return Redirect($"/Account/Auth?Email=eckumoc@gmail.com&&Password=eckumoc@gmail.com");
+            /*_authorization.Signin("eckumoc@gmail.com", "eckumoc@gmail.com");
+            return RedirectToAction(_options.LoginPagePath);*/
         }
 
     }
@@ -90,12 +106,22 @@ public class AccountController : PageController
     }
 
 
+    public IActionResult Activate(string ActivationKey, string Email)
+    {
+        
+        return ActivationRequire(new ActivationRequireViewModel() { 
+            Email = Email,
+            ActivationKey = ActivationKey
+        });
+    }
+
     /// <summary>
     /// Выполнение процедуры активации учетной записи
     /// </summary>
     /// <param name="model"></param>
     /// <returns></returns>
     [HttpPost]
+    //http://localhost:5000/Account/Activate?ActivationKey={ActivationKey}&&Email={Email}
     public IActionResult ActivationRequire([Bind("Email,ActivationKey")] ActivationRequireViewModel model)
     {
         ApplicationDb.Entities.User user = _authorization.Verify();
@@ -141,7 +167,8 @@ public class AccountController : PageController
                 _db.SaveChanges();
                 _email.SendEmail(user.Account.Email,
                     "Активация учетной записи",
-                    $"<p>Ваш код активации: <b>{activationKey}</b></p>"
+                    $"<p>Ваш код активации: <b>{activationKey}</b></p>"+
+                    @"<a href="""+ $"http://localhost:5000/Account/Activate?ActivationKey={activationKey}&&Email={user.Account.Email}" + @""">Завершить активацию<a>"
                 );
                 return View("ActivationRequire", new ActivationRequireViewModel()
                 {
@@ -430,6 +457,21 @@ public class AccountController : PageController
     }
 
 
+    public IActionResult Auth(string Email, string Password)
+    {
+        ApplicationDb.Entities.User user = _authorization.Signin(Email, Password);
+        if (user != null)
+        {
+            _notifications.Info("Выполнен авторизованный вход в систему");
+            return Redirect(user.GetUserHomeUrl());
+        }
+        else
+        {
+
+            return RedirectToAction("Login","Account");
+        }
+    }
+
     /// <summary>
     /// Запрос авторизации пользователя
     /// </summary>
@@ -450,13 +492,14 @@ public class AccountController : PageController
                 }
             }
             model.ErrorMessage = "Авторизация не выполнена";
-            return View(model);
+            return View("Login",model);
         }
         else
         {
             
             try
             {
+                
                 string EncodedResponse = Request.Form["g-Recaptcha-Response"];
                 bool IsCaptchaValid = EnableRecaptcha ? ((ReCaptchaClass.Validate(EncodedResponse) == "true") ? true : false) : true;
                 
@@ -473,21 +516,21 @@ public class AccountController : PageController
                     {
                         model.Email = "123";
                            model.ErrorMessage = "Авторизация не выполнена";
-                        return View(model);
+                        return View("Login", model);
                     }
                         
                 }
                
                 model.ErrorMessage = "Авторизация не выполнена";
                 TempData["recaptcha"] = "Подтвердите что Вы не робот";
-                return View(model);
+                return View("Login", model);
                 
 
             }
             catch (Exception ex)
             {
                 model.ErrorMessage = "Авторизация не выполнена. " + ex.Message;
-                return View(model);
+                return View("Login", model);
             }
         }
 

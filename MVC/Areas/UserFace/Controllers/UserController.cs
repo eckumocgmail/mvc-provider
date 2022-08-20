@@ -13,10 +13,13 @@ using System.Threading.Tasks;
 
 namespace Areas.UserFace.Controllers
 {
+
+
     [Area("UserFace")]
     public class UserController : NavigationController
     {
-        public UserController(UserModelsService service) : base(service)
+        public UserModelsService service { get; set; }
+        public UserController(IServiceProvider serviceProvider) : base(serviceProvider)
         {
 
         }

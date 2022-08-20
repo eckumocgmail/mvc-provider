@@ -10,7 +10,7 @@ namespace ApplicationModel.ApplicationModel
 {
     public class NavigationController : PageController
     {
-        public NavigationController(UserModelsService service) : base(service)
+        public NavigationController(IServiceProvider serviceProvider) : base(serviceProvider)
         {
         }
     }

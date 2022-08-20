@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NetProjects2025\\MVC-Provider\\ApplicationLogic\\ApplicationLogic.csproj": {}
+    "D:\\Projects\\mvc-provider\\ApplicationLogic\\ApplicationLogic.csproj": {}
   },
   "projects": {
-    "D:\\NetProjects2025\\MVC-Provider\\ApplicationAbstraction\\ApplicationAbstraction.csproj": {
+    "D:\\Projects\\mvc-provider\\ApplicationAbstraction\\ApplicationAbstraction.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\ApplicationAbstraction\\ApplicationAbstraction.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\ApplicationAbstraction\\ApplicationAbstraction.csproj",
         "projectName": "ApplicationAbstraction",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationAbstraction\\ApplicationAbstraction.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationAbstraction\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\ApplicationAbstraction\\ApplicationAbstraction.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\ApplicationAbstraction\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,21 +26,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\ApplicationViews\\ApplicationViews.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationViews\\ApplicationViews.csproj"
+              "D:\\Projects\\mvc-provider\\ApplicationViews\\ApplicationViews.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\ApplicationViews\\ApplicationViews.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj"
+              "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\CoreUtils\\CoreUtils.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreUtils\\CoreUtils.csproj"
+              "D:\\Projects\\mvc-provider\\CoreUtils\\CoreUtils.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreUtils\\CoreUtils.csproj"
               }
             }
           }
@@ -60,7 +59,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -69,24 +69,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\ApplicationAuthorization\\ApplicationAuthorization.csproj": {
+    "D:\\Projects\\mvc-provider\\ApplicationAuthorization\\ApplicationAuthorization.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\ApplicationAuthorization\\ApplicationAuthorization.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\ApplicationAuthorization\\ApplicationAuthorization.csproj",
         "projectName": "ApplicationAuthorization",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationAuthorization\\ApplicationAuthorization.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationAuthorization\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\ApplicationAuthorization\\ApplicationAuthorization.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\ApplicationAuthorization\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -95,21 +95,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\ApplicationModel\\ApplicationModel.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationModel\\ApplicationModel.csproj"
+              "D:\\Projects\\mvc-provider\\ApplicationModel\\ApplicationModel.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\ApplicationModel\\ApplicationModel.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\CoreHttp\\CoreHttp.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreHttp\\CoreHttp.csproj"
+              "D:\\Projects\\mvc-provider\\CoreHttp\\CoreHttp.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreHttp\\CoreHttp.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\CoreSignalr\\CoreSignalr.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreSignalr\\CoreSignalr.csproj"
+              "D:\\Projects\\mvc-provider\\CoreSignalr\\CoreSignalr.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreSignalr\\CoreSignalr.csproj"
               }
             }
           }
@@ -129,7 +128,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -141,24 +141,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\ApplicationLogic\\ApplicationLogic.csproj": {
+    "D:\\Projects\\mvc-provider\\ApplicationLogic\\ApplicationLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\ApplicationLogic\\ApplicationLogic.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\ApplicationLogic\\ApplicationLogic.csproj",
         "projectName": "ApplicationLogic",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationLogic\\ApplicationLogic.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationLogic\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\ApplicationLogic\\ApplicationLogic.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\ApplicationLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -167,18 +167,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\ApplicationServices\\ApplicationServices.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationServices\\ApplicationServices.csproj"
+              "D:\\Projects\\mvc-provider\\ApplicationServices\\ApplicationServices.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\ApplicationServices\\ApplicationServices.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\ApplicationViews\\ApplicationViews.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationViews\\ApplicationViews.csproj"
+              "D:\\Projects\\mvc-provider\\ApplicationViews\\ApplicationViews.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\ApplicationViews\\ApplicationViews.csproj"
               }
             }
           }
@@ -216,7 +215,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -225,24 +225,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\ApplicationModel\\ApplicationModel.csproj": {
+    "D:\\Projects\\mvc-provider\\ApplicationModel\\ApplicationModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\ApplicationModel\\ApplicationModel.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\ApplicationModel\\ApplicationModel.csproj",
         "projectName": "ApplicationModel",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationModel\\ApplicationModel.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationModel\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\ApplicationModel\\ApplicationModel.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\ApplicationModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -251,24 +251,23 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\ApplicationAbstraction\\ApplicationAbstraction.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationAbstraction\\ApplicationAbstraction.csproj"
+              "D:\\Projects\\mvc-provider\\ApplicationAbstraction\\ApplicationAbstraction.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\ApplicationAbstraction\\ApplicationAbstraction.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\CoreHttp\\CoreHttp.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreHttp\\CoreHttp.csproj"
+              "D:\\Projects\\mvc-provider\\CoreHttp\\CoreHttp.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreHttp\\CoreHttp.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\CoreModel\\CoreModel.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModel\\CoreModel.csproj"
+              "D:\\Projects\\mvc-provider\\CoreModel\\CoreModel.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreModel\\CoreModel.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj"
+              "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj"
               }
             }
           }
@@ -308,7 +307,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -317,24 +317,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\ApplicationServices\\ApplicationServices.csproj": {
+    "D:\\Projects\\mvc-provider\\ApplicationServices\\ApplicationServices.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\ApplicationServices\\ApplicationServices.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\ApplicationServices\\ApplicationServices.csproj",
         "projectName": "ApplicationServices",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationServices\\ApplicationServices.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationServices\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\ApplicationServices\\ApplicationServices.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\ApplicationServices\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -343,21 +343,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\ApplicationAuthorization\\ApplicationAuthorization.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationAuthorization\\ApplicationAuthorization.csproj"
+              "D:\\Projects\\mvc-provider\\ApplicationAuthorization\\ApplicationAuthorization.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\ApplicationAuthorization\\ApplicationAuthorization.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\ApplicationModel\\ApplicationModel.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationModel\\ApplicationModel.csproj"
+              "D:\\Projects\\mvc-provider\\ApplicationModel\\ApplicationModel.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\ApplicationModel\\ApplicationModel.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj"
+              "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj"
               }
             }
           }
@@ -383,7 +382,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -392,24 +392,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\ApplicationViews\\ApplicationViews.csproj": {
+    "D:\\Projects\\mvc-provider\\ApplicationViews\\ApplicationViews.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\ApplicationViews\\ApplicationViews.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\ApplicationViews\\ApplicationViews.csproj",
         "projectName": "ApplicationViews",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationViews\\ApplicationViews.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\ApplicationViews\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\ApplicationViews\\ApplicationViews.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\ApplicationViews\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -418,33 +418,32 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\ComboboxView\\ComboboxView.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ComboboxView\\ComboboxView.csproj"
+              "D:\\Projects\\mvc-provider\\ComboboxView\\ComboboxView.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\ComboboxView\\ComboboxView.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\ContextMenuView\\ContextMenuView.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ContextMenuView\\ContextMenuView.csproj"
+              "D:\\Projects\\mvc-provider\\ContextMenuView\\ContextMenuView.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\ContextMenuView\\ContextMenuView.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\FormView\\FormView.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\FormView\\FormView.csproj"
+              "D:\\Projects\\mvc-provider\\FormView\\FormView.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\FormView\\FormView.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\GridView\\GridView.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\GridView\\GridView.csproj"
+              "D:\\Projects\\mvc-provider\\GridView\\GridView.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\GridView\\GridView.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\ListView\\ListView.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ListView\\ListView.csproj"
+              "D:\\Projects\\mvc-provider\\ListView\\ListView.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\ListView\\ListView.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\TableView\\TableView.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\TableView\\TableView.csproj"
+              "D:\\Projects\\mvc-provider\\TableView\\TableView.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\TableView\\TableView.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\TreeView\\TreeView.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\TreeView\\TreeView.csproj"
+              "D:\\Projects\\mvc-provider\\TreeView\\TreeView.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\TreeView\\TreeView.csproj"
               }
             }
           }
@@ -478,7 +477,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -487,24 +487,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\ComboboxView\\ComboboxView.csproj": {
+    "D:\\Projects\\mvc-provider\\ComboboxView\\ComboboxView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\ComboboxView\\ComboboxView.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\ComboboxView\\ComboboxView.csproj",
         "projectName": "ComboboxView",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ComboboxView\\ComboboxView.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\ComboboxView\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\ComboboxView\\ComboboxView.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\ComboboxView\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -513,18 +513,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj"
+              "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\ViewsCommon\\ViewsCommon.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ViewsCommon\\ViewsCommon.csproj"
+              "D:\\Projects\\mvc-provider\\ViewsCommon\\ViewsCommon.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\ViewsCommon\\ViewsCommon.csproj"
               }
             }
           }
@@ -550,7 +549,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -562,24 +562,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\ContextMenuView\\ContextMenuView.csproj": {
+    "D:\\Projects\\mvc-provider\\ContextMenuView\\ContextMenuView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\ContextMenuView\\ContextMenuView.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\ContextMenuView\\ContextMenuView.csproj",
         "projectName": "ContextMenuView",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ContextMenuView\\ContextMenuView.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\ContextMenuView\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\ContextMenuView\\ContextMenuView.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\ContextMenuView\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -588,7 +588,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -612,7 +611,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -624,24 +624,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\CoreHttp\\CoreHttp.csproj": {
+    "D:\\Projects\\mvc-provider\\CoreHttp\\CoreHttp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\CoreHttp\\CoreHttp.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\CoreHttp\\CoreHttp.csproj",
         "projectName": "CoreHttp",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreHttp\\CoreHttp.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\CoreHttp\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\CoreHttp\\CoreHttp.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\CoreHttp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -650,15 +650,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj"
+              "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj"
               }
             }
           }
@@ -684,7 +683,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -693,24 +693,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\CoreModel\\CoreModel.csproj": {
+    "D:\\Projects\\mvc-provider\\CoreModel\\CoreModel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\CoreModel\\CoreModel.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\CoreModel\\CoreModel.csproj",
         "projectName": "CoreModel",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModel\\CoreModel.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModel\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\CoreModel\\CoreModel.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\CoreModel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -719,15 +719,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\CoreUtils\\CoreUtils.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreUtils\\CoreUtils.csproj"
+              "D:\\Projects\\mvc-provider\\CoreUtils\\CoreUtils.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreUtils\\CoreUtils.csproj"
               }
             }
           }
@@ -757,7 +756,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -766,24 +766,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj": {
+    "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj",
         "projectName": "CoreModule",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\CoreModule\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -792,7 +792,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -862,7 +861,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -871,24 +871,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\CoreSignalr\\CoreSignalr.csproj": {
+    "D:\\Projects\\mvc-provider\\CoreSignalr\\CoreSignalr.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\CoreSignalr\\CoreSignalr.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\CoreSignalr\\CoreSignalr.csproj",
         "projectName": "CoreSignalr",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreSignalr\\CoreSignalr.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\CoreSignalr\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\CoreSignalr\\CoreSignalr.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\CoreSignalr\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -897,15 +897,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\CoreHttp\\CoreHttp.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreHttp\\CoreHttp.csproj"
+              "D:\\Projects\\mvc-provider\\CoreHttp\\CoreHttp.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreHttp\\CoreHttp.csproj"
               }
             }
           }
@@ -935,7 +934,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -944,24 +944,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\CoreUtils\\CoreUtils.csproj": {
+    "D:\\Projects\\mvc-provider\\CoreUtils\\CoreUtils.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\CoreUtils\\CoreUtils.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\CoreUtils\\CoreUtils.csproj",
         "projectName": "CoreUtils",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreUtils\\CoreUtils.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\CoreUtils\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\CoreUtils\\CoreUtils.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\CoreUtils\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -970,7 +970,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1008,7 +1007,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -1017,24 +1017,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\FormView\\FormView.csproj": {
+    "D:\\Projects\\mvc-provider\\FormView\\FormView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\FormView\\FormView.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\FormView\\FormView.csproj",
         "projectName": "FormView",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\FormView\\FormView.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\FormView\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\FormView\\FormView.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\FormView\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1043,7 +1043,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -1073,7 +1072,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -1082,24 +1082,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\GridView\\GridView.csproj": {
+    "D:\\Projects\\mvc-provider\\GridView\\GridView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\GridView\\GridView.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\GridView\\GridView.csproj",
         "projectName": "GridView",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\GridView\\GridView.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\GridView\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\GridView\\GridView.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\GridView\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1108,18 +1108,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj"
+              "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj"
               },
-              "D:\\NetProjects2025\\MVC-Provider\\ViewsCommon\\ViewsCommon.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ViewsCommon\\ViewsCommon.csproj"
+              "D:\\Projects\\mvc-provider\\ViewsCommon\\ViewsCommon.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\ViewsCommon\\ViewsCommon.csproj"
               }
             }
           }
@@ -1139,7 +1138,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -1151,24 +1151,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\ListView\\ListView.csproj": {
+    "D:\\Projects\\mvc-provider\\ListView\\ListView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\ListView\\ListView.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\ListView\\ListView.csproj",
         "projectName": "ListView",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ListView\\ListView.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\ListView\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\ListView\\ListView.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\ListView\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1177,15 +1177,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj"
+              "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj"
               }
             }
           }
@@ -1205,7 +1204,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -1217,24 +1217,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\TableView\\TableView.csproj": {
+    "D:\\Projects\\mvc-provider\\TableView\\TableView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\TableView\\TableView.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\TableView\\TableView.csproj",
         "projectName": "TableView",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\TableView\\TableView.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\TableView\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\TableView\\TableView.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\TableView\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1243,15 +1243,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj"
+              "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj"
               }
             }
           }
@@ -1271,7 +1270,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -1283,24 +1283,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\TreeView\\TreeView.csproj": {
+    "D:\\Projects\\mvc-provider\\TreeView\\TreeView.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\TreeView\\TreeView.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\TreeView\\TreeView.csproj",
         "projectName": "TreeView",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\TreeView\\TreeView.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\TreeView\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\TreeView\\TreeView.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\TreeView\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1309,15 +1309,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModule\\CoreModule.csproj"
+              "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreModule\\CoreModule.csproj"
               }
             }
           }
@@ -1343,7 +1342,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -1352,24 +1352,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\NetProjects2025\\MVC-Provider\\ViewsCommon\\ViewsCommon.csproj": {
+    "D:\\Projects\\mvc-provider\\ViewsCommon\\ViewsCommon.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetProjects2025\\MVC-Provider\\ViewsCommon\\ViewsCommon.csproj",
+        "projectUniqueName": "D:\\Projects\\mvc-provider\\ViewsCommon\\ViewsCommon.csproj",
         "projectName": "ViewsCommon",
-        "projectPath": "D:\\NetProjects2025\\MVC-Provider\\ViewsCommon\\ViewsCommon.csproj",
-        "packagesPath": "C:\\Users\\reuser\\.nuget\\packages\\",
-        "outputPath": "D:\\NetProjects2025\\MVC-Provider\\ViewsCommon\\obj\\",
+        "projectPath": "D:\\Projects\\mvc-provider\\ViewsCommon\\ViewsCommon.csproj",
+        "packagesPath": "C:\\Users\\123\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\mvc-provider\\ViewsCommon\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\reuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\123\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -1378,15 +1378,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\System-Config\\NuGetStore": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "D:\\NetProjects2025\\MVC-Provider\\CoreModel\\CoreModel.csproj": {
-                "projectPath": "D:\\NetProjects2025\\MVC-Provider\\CoreModel\\CoreModel.csproj"
+              "D:\\Projects\\mvc-provider\\CoreModel\\CoreModel.csproj": {
+                "projectPath": "D:\\Projects\\mvc-provider\\CoreModel\\CoreModel.csproj"
               }
             }
           }
@@ -1406,7 +1405,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -1418,7 +1418,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
